@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --padding-container:100px 0;
+    --color-title:#2C3E50;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #FAF3EC;
+}
+
+.hero{
+    width: 800px;
+    height: 100vh;
+    position: relative;
+    display:flex;
+    margin: auto;
+}
+
+.container{
+    width:90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--padding-container);
+}
+
+
+/*Imagen de perfil*/
+
+.picture{
+    width:250px;
+    overflow: hidden;
+}
+.picture img{
+    width:100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/*Nav*/
+
+.nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav_title{
+    font-weight: 300;
+}
+.nav_link{
+    margin-left:auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    gap:2em;
+}
+
+.nav_items{
+    list-style: none;
+}
+
+.nav_links{
+    color: var(--color-title);
+    text-decoration: none;
+}
+
+.nav_menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav_img{
+    display: block;
+    width: 30px;
+}
+
+.nav_close{
+    display: var(--show, none);
+}
