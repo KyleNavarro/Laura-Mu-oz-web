@@ -88,4 +88,45 @@ a{
     
 }
 
+/*perfil*/
+
+.img_perfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+    
+}
+
+.perfil{
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 50px auto;
+    
+}
+
+/*cv y linkedin*/
+.botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px auto;
+}
+
+.logo_linkedin img{
+    width: 35px;
+    
+}
+
+.cv a{
+    border: solid 0.5px #2C3E50;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #F7C5A0;
+    
+}
+
 
