@@ -1,14 +1,8 @@
 (function(){
-    const openButton = document.querySelector('.nav_menu');
-    const menu = document.querySelector('.nav_link');
-    const closeMenu = document.querySelector('.nav_close');
+    const menuButton = document.querySelector('.menu-hamburguesa');
+    const navList = document.querySelector('.nav-list');
 
-    openButton.addEventListener('click', () => {
-        menu.classList.add('.nav_link--show');
+    menuButton.addEventListener('click', () => {
+        navList.classList.toggle('active');
     });
-
-    closeMenu.addEventListener('click', () => {
-        menu.classList.remove('.nav_link--show');
-    });
-
 })();

@@ -2,86 +2,90 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-:root {
-    --padding-container:100px 0;
-    --color-title:#2C3E50;
-}
-
-body{
-    font-family: sans-serif;
     background-color: #FAF3EC;
+    
 }
 
+/*header*/
 .hero{
-    width: 800px;
-    height: 100vh;
+    width: 1000px;
+    height: 100px;
     position: relative;
-    display:flex;
-    margin: auto;
-}
-
-.container{
-    width:90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: var(--padding-container);
-}
-
-
-/*Imagen de perfil*/
-
-.picture{
-    width:250px;
-    overflow: hidden;
-}
-.picture img{
-    width:100%;
-    height: auto;
-    border-radius: 50%;
-}
-
-/*Nav*/
-
-.nav{
-    --padding-container:0;
-    height: 100%;
     display: flex;
     align-items: center;
+    justify-content:space-around;
+    margin:0 auto;
+   
 }
 
-.nav_title{
-    font-weight: 300;
-}
-.nav_link{
-    margin-left:auto;
-    padding: 0;
-    display: grid;
-    grid-auto-flow: column;
-    gap:2em;
+.title{
+    font-family: sans-serif;
+    font-size:40px;
+    color: #1a3047;
 }
 
-.nav_items{
+.nav{
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-list{
     list-style: none;
+    display: flex;
+    gap: 40px;
 }
 
-.nav_links{
-    color: var(--color-title);
+a{
     text-decoration: none;
+    color: #2C3E50;
+    font-size: 20px;
+    font-weight: semibold;
 }
 
-.nav_menu{
-    margin-left: auto;
-    cursor: pointer;
+.nav-icons{
+    display:flex;
+}
+
+.menu-hamburguesa{
     display: none;
-}
-
-.nav_img{
-    display: block;
+    cursor: pointer;
+    margin-left: auto;
     width: 30px;
 }
 
-.nav_close{
-    display: var(--show, none);
+
+
+@media (max-width: 600px){
+
+    .hero{
+        width: 100%;
+        height: 80px;
+    }
+    .nav-list{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top:100px;
+        left:0;       
+        width: 100%;
+        padding: 20px;
+        
+    }
+
+   .title{
+    font-size: 25px;
+   }
+    .nav-list.active{
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-hamburguesa{
+        display: block;
+    }
+
+    
 }
+
+
