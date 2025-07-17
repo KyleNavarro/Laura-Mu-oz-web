@@ -1,30 +1,36 @@
+
+
 const boton = document.querySelectorAll('.btnPersonal');
 const parrafos = document.querySelectorAll('.card-content p');
 const imagenes = document.querySelectorAll('.card2 img');
 
-boton.forEach((btn, index) => {
-    btn.onclick = function(e){
-        e.preventDefault();
+boton.forEach((btn, index) =>{
+        btn.onclick = function(e){
+            e.preventDefault();
 
-        const parrafo = parrafos[index];
-        const imagen = imagenes[index];
-        parrafo.classList.toggle('paragraphPersonal');
 
-        const parrafoOculto = parrafo.classList.contains('paragraphPersonal');
 
-        btn.textContent = parrafoOculto ? 'Leer más' : 'Leer menos';
-        imagen.style.display = parrafoOculto ? 'block' : 'none';
-        
-    };
+            const parrafo = parrafos[index];
+            const imagen = imagenes[index];
+            parrafo.classList.toggle('paragraphPersonal');
+
+            const parrafoOculto = parrafo.classList.contains('paragraphPersonal');
+            btn.textContent = parrafoOculto ? 'Leer mas' : 'Leer menos';
+            imagen.style.display = parrafoOculto ? 'block' : 'none';
+
+        }
+
+
 });
 
 
+//-------------------------------------------------------------------------------------------------
 
-
+/*Despliegue boton VER MAS*/
 const cards = document.querySelectorAll('.card2');
 const toggleBtn = document.getElementById('toggleCards');
 
-// Oculta todas las cards después de la cuarta
+//Oculta todas las cards después de la cuarta card
 cards.forEach((card, index) => {
     if (index >= 4) {
         card.classList.add('hidden');
@@ -44,3 +50,8 @@ toggleBtn.addEventListener('click', () => {
 
     toggleBtn.textContent = isShowing ? 'Ver más' : 'Ver menos';
 });
+
+
+
+
+

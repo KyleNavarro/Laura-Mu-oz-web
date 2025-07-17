@@ -540,6 +540,7 @@ h4{
     margin: 20px 0;
     overflow: hidden;
     width: 400px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
