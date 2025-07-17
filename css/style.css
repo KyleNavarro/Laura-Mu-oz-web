@@ -579,3 +579,42 @@ h4{
     background-color: #D9D9D9;
 }
 
+
+/*ocultar y mostrar cards*/
+/* Oculta las cards extra */
+.card2.hidden {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin: 0; /* elimina márgenes que también pueden causar espacio */
+    padding: 0; /* elimina padding interno */
+    transition: all 0.5s ease;
+}
+
+/* Muestra las cards extra */
+.card2.show {
+    max-height: 500px; /* o suficiente para mostrar el contenido */
+    opacity: 1;
+    margin: 16px 0; /* recupera margen */
+    padding: 16px; /* recupera padding si lo quitaste */
+}
+
+.btnVerMas{
+
+    background-color: #1a3047;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+
+.btnVerMas:hover {
+    background-color: #D9D9D9;
+    color: #1a3047;
+    font-weight: bold;
+    cursor: pointer;
+}
+
