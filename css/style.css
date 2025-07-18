@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     max-width: 100vw;
     /* background-color: #FAF3EC; */
     /* background-color: #FFF6F0; */
     background-color: #FFF9F5;
@@ -68,37 +69,7 @@ a{
 
 
 
-@media (max-width: 600px){
 
-    .hero{
-        width: 100%;
-        height: 80px;
-    }
-    .nav-list{
-        display: none;
-        flex-direction: column;
-        position: fixed;
-        top:100px;
-        left:0;       
-        width: 100%;
-        padding: 20px;
-        
-    }
-
-   .title{
-    font-size: 25px;
-   }
-    .nav-list.active{
-        display: flex;
-        align-items: center;
-    }
-
-    .menu-hamburguesa{
-        display: block;
-    }
-
-    
-}
 
 /*perfil*/
 
@@ -137,7 +108,7 @@ a{
 
 .texto strong {
     color: #F7C5A0;           /* durazno claro para resaltar empresas */
-    font-weight: 600;         /* un poco menos fuerte que bold */
+          
 }
 
 /*cv y linkedin*/
@@ -437,6 +408,7 @@ h4{
 
 .footerOne{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
 }
@@ -530,6 +502,7 @@ h4{
 
 .sectionCards2{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -579,7 +552,7 @@ h4{
 }
 
 .btnPersonal{
-        display: inline-block;
+    display: inline-block;
     background-color: #F7C5A0;
     color: #1a3047;
     text-decoration: none;
@@ -628,5 +601,122 @@ h4{
     color: #1a3047;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media (max-width: 600px){
+
+    .hero{
+        width: 100%;
+        height: 80px;
+    }
+
+    .nav-list{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top:100px;
+        left:0;       
+        width: 100%;
+        padding: 20px;
+        
+    }
+
+   .title{
+    font-size: 25px;
+   }
+    .nav-list.active{
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .menu-hamburguesa{
+        display: block;
+    }
+
+    .perfil{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+
+
+    .botones{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .texto{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainHabilities{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .habilitiesCard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:0;
+    }
+
+    .itemsHabilities{
+        width: 60px;
+    }
+
+    .education{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .sectionCards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .imgExperiencia{
+        display: none;
+    }
+
+    .experienciaTimeLine{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .subtitulo{
+        text-align: center;
+    }
+
+    .about p{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .footer {
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .footerOne{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 300px){
+    .cv a{
+        font-size: 15px;
+    }
 }
 
